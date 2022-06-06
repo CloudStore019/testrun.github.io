@@ -1,0 +1,50 @@
+.imagex-container {
+    position: relative;
+    background: #333;
+    transition: all 1s;
+    overflow: hidden
+}
+
+.imagex-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+    width: 100%;
+    opacity: 0
+}
+body .organic .most-popular-movies-container .hideThis,
+body .organic .movies-container .hideThis {
+    opacity: 0;
+    position: relative;
+    z-index: 10;
+    transition: all .3s
+}
+
+body .organic .most-popular-movies-container .video-player-container .video-player.video-loaded,
+body .organic .movies-container .video-player-container .video-player.video-loaded {
+    opacity: 1;
+    transition: all .3s
+}
+
+
+.header-area .menu-mobile .menu-mobile-dropdown .mobile-menu {
+    max-height: 0;
+    height: 0;
+    overflow: hidden;
+    transition: max-height .15s ease-out;
+    margin: 0;
+    text-align: left
+}
+
+
+.header-area .menu-mobile .menu-mobile-dropdown .mobile-menu.mobile-menu-open {
+    max-height: 500px;
+    transition: max-height .25s ease-in
+}
+
+.header-area .menu-mobile .toggler:checked~.menu-mobile-dropdown .mobile-menu {
+    max-height: 500px;
+    height: auto;
+    transition: max-height .15s ease-out
+}
